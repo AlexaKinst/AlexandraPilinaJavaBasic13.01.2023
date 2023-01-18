@@ -93,19 +93,27 @@ public class Fitness {
         LocalDate birthday1 = LocalDate.of(1997, 7, 30);
         Fitness customer1 = new Fitness("Андрій", birthday1, "andrey@gmail.com", "1234567", "Котляренко", 75, 90, 3500);
         customer1.printAccountInfo();
+
         System.out.println("------------------------");
+
         LocalDate birthday2 = LocalDate.of(1984, 11, 3);
         Fitness customer2 = new Fitness("Олег", birthday2, "oleg@gmail.com", "1357903", "Деркач", 87, 90, 12000);
         customer2.printAccountInfo();
+
         System.out.println("------------------------");
+
         LocalDate birthday3 = LocalDate.of(1999, 12, 14);
         Fitness customer3 = new Fitness("Артур", birthday3, "arthur@gmail.com", "3446673", "Рейн", 77, 100, 6580);
         customer3.printAccountInfo();
+
         System.out.println("------------------------");
+
         LocalDate birthday4 = LocalDate.of(1990, 4, 26);
         Fitness customer4 = new Fitness("Роман", birthday4, "roman@gmail.com", "1238569", "Олейник", 55, 80, 7900);
         customer4.printAccountInfo();
+
         System.out.println("------------------------");
+
         LocalDate birthday5 = LocalDate.of(1990, 4, 26);
         Fitness customer5 = new Fitness("Сергій", birthday5, "sergey@gmail.com", "3840736", "Бойко", 94, 100, 15000);
         customer5.printAccountInfo();
@@ -113,6 +121,7 @@ public class Fitness {
         System.out.println("------------------------");
         System.out.println("ЗМІНЕНО: ");
         System.out.println("------------------------");
+
         customer2.setSurname("Дергач");
         customer2.setWeight(82);
         customer2.setPressure(100);
