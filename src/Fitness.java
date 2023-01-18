@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Fitness {
     String name;
@@ -74,6 +75,7 @@ public class Fitness {
         this.weight = weight;
         this.pressure = pressure;
         this.steps = steps;
+        this.age = Period.between(birthday, LocalDate.now()).getYears();;
     }
 
 
@@ -86,6 +88,7 @@ public class Fitness {
         System.out.println("Вага: " + weight);
         System.out.println("Тиск: " + pressure);
         System.out.println("Кількість пройдених за день кроків: " + steps);
+        System.out.println("Вік користувача: " + age);
     }
 
 
@@ -114,7 +117,7 @@ public class Fitness {
 
         System.out.println("------------------------");
 
-        LocalDate birthday5 = LocalDate.of(1990, 4, 26);
+        LocalDate birthday5 = LocalDate.of(2003, 9, 12);
         Fitness customer5 = new Fitness("Сергій", birthday5, "sergey@gmail.com", "3840736", "Бойко", 94, 100, 15000);
         customer5.printAccountInfo();
 
